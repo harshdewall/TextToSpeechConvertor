@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(81, 215, 253, 0.735);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1 span{
+    color: #fc5783;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px; /* Adds space between textarea and controls */
+}
+
+textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.controls {
+    margin-bottom: 20px;
+    width: 100%; /* Ensures controls take up full width */
+}
+
+.controls label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 600;
+    display: block;
+}
+
+.controls select,
+.controls input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.controls select:focus,
+.controls input:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.controls input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.controls span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between buttons */
+}
+
+.buttons button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #fc5783;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    width: 180px;
+}
+
+.buttons button:hover {
+    background-color: #a866ff;
+    transform: translateY(-3px);
+}
+
+.buttons button:active {
+    transform: translateY(1px);
+}
+
+.buttons button:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .controls select,
+    .controls input {
+        font-size: 14px;
+    }
+
+    .buttons button {
+        width: 160px;
+    }
+}

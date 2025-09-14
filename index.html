@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech <span>Converter</span></h1>
+        
+        <!-- Text Input Area -->
+        <textarea id="textInput" placeholder="Enter text here...by HARSH DEWAL"></textarea>
+        
+        <!-- Controls -->
+        <div class="controls">
+            <label for="accentSelect">Choose Accent/Language:</label>
+            <select id="accentSelect">
+                <!-- Dynamic language options will be populated here -->
+            </select>
+
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" min="0.1" max="2" step="0.1" value="1">
+            <span id="rateValue">1</span>
+
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+            <span id="pitchValue">1</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="speakButton">Listen</button>
+            <button id="downloadButton">Download Speech</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
